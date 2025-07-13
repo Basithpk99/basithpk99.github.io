@@ -5,105 +5,71 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Muhammed Basith PK</title>
   <style>
+    /* Ainjmal Style: Minimal, Modern, and Soft */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: #f9f9f9;
       color: #222;
       line-height: 1.7;
-      margin: 0;
-      padding: 0;
     }
 
     header {
       background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
       color: white;
-      padding: 3rem 1rem;
+      padding: 4rem 1rem;
       text-align: center;
     }
 
-    header img {
-      width: 130px;
-      height: 130px;
-      border-radius: 50%;
-      object-fit: cover;
-      margin-bottom: 1rem;
-      border: 3px solid white;
-    }
-
     header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.3rem;
+      font-size: 2.8rem;
+      margin-bottom: 0.5rem;
+      letter-spacing: 1px;
     }
 
     header p {
-      font-size: 1.1rem;
-      opacity: 0.9;
+      font-size: 1.2rem;
+      font-weight: 300;
     }
 
     nav {
       background: white;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 1rem;
       text-align: center;
-      padding: 0.8rem 0;
     }
 
     nav a {
       color: #2c5364;
       margin: 0 1rem;
       text-decoration: none;
-      font-weight: 600;
+      font-weight: 500;
     }
 
     section {
       max-width: 900px;
       margin: 2rem auto;
-      padding: 1.5rem 2rem;
+      padding: 1rem 2rem;
       background: white;
       border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
 
     section h2 {
-      font-size: 1.6rem;
-      color: #203a43;
+      font-size: 1.8rem;
       margin-bottom: 1rem;
+      color: #203a43;
       border-left: 5px solid #2c5364;
       padding-left: 10px;
     }
 
     ul {
       margin-left: 20px;
-    }
-
-    .btn {
-      background: #2c5364;
-      color: white;
-      border: none;
-      padding: 0.6rem 1.2rem;
-      border-radius: 5px;
-      cursor: pointer;
-      font-size: 1rem;
-    }
-
-    .btn:hover {
-      background: #203a43;
-    }
-
-    #email {
-      margin-top: 1rem;
-      color: #203a43;
-      display: none;
-    }
-
-    .socials {
-      margin-top: 1.5rem;
-    }
-
-    .socials a {
-      margin-right: 15px;
-      font-size: 1.2rem;
-      text-decoration: none;
-      color: #2c5364;
     }
 
     footer {
@@ -114,58 +80,68 @@
       margin-top: 3rem;
       font-size: 0.9rem;
     }
+
+    .highlight {
+      color: #0fbcf9;
+    }
+
+    .btn {
+      padding: 0.5rem 1.2rem;
+      background: #2c5364;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      margin-top: 1rem;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background: #203a43;
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="https://via.placeholder.com/130" alt="Muhammed Basith PK" />
     <h1>MUHAMMED BASITH PK</h1>
     <p>Assistant Professor | Islamic Scholar | Research Scholar</p>
   </header>
 
   <nav>
     <a href="#about">About</a>
-    <a href="#skills">Skills</a>
+    <a href="#skills">Skills & Interests</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <section id="about">
     <h2>About</h2>
     <p>
-      Muhammed Basith PK is an <strong>Assistant Professor</strong> with deep involvement in teaching, research, and writing. He is an <strong>Islamic scholar</strong> known for his balanced and thoughtful approach in both traditional and modern fields.
+      Muhammed Basith PK is an <span class="highlight">Assistant Professor</span> and a passionate 
+      <span class="highlight">Islamic scholar</span>, committed to education, character building, and knowledge sharing.
+      He actively engages in <strong>reading, writing, and research</strong> in both contemporary and traditional fields.
     </p>
     <p>
-      His interests include <em>reading, writing, and mentoring scholars</em>, with a passion for building a knowledgeable and value-based academic community.
+      With a deep love for learning, he nurtures students and scholars alike, combining modern academic excellence with 
+      spiritual depth rooted in Islamic values.
     </p>
-    <div style="margin-top: 1rem;">
-      <a href="CV.pdf" class="btn" download>📄 Download CV</a>
-    </div>
   </section>
 
   <section id="skills">
     <h2>Skills & Interests</h2>
     <ul>
-      <li>Academic Teaching & Research</li>
-      <li>Reading Habit & Scholarly Writing</li>
-      <li>Islamic Studies & Spiritual Leadership</li>
-      <li>Student Mentorship</li>
-      <li>Cross-Disciplinary Education</li>
+      <li>Academic Teaching and Research</li>
+      <li>Reading Habit & Writing</li>
+      <li>Islamic Thought & Scholarship</li>
+      <li>Interdisciplinary Education</li>
+      <li>Mentorship & Leadership</li>
     </ul>
   </section>
 
   <section id="contact">
     <h2>Contact</h2>
-    <p>If you'd like to collaborate or connect, feel free to reach out:</p>
-    <button class="btn" onclick="showEmail()">📧 Show Email</button>
-    <p id="email">muhammed.basith.pk@example.com</p>
-
-    <div class="socials">
-      <h3 style="margin-top:1.5rem; font-size: 1.2rem;">Social Media</h3>
-      <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-      <a href="https://twitter.com" target="_blank">Twitter</a>
-      <a href="https://github.com" target="_blank">GitHub</a>
-    </div>
+    <p>If you'd like to get in touch or collaborate, feel free to reach out:</p>
+    <button class="btn" onclick="showEmail()">Reveal Email</button>
+    <p id="email" style="display:none; margin-top:1rem; color:#203a43;"></p>
   </section>
 
   <footer>
@@ -174,8 +150,9 @@
 
   <script>
     function showEmail() {
-      const emailEl = document.getElementById('email');
-      emailEl.style.display = 'block';
+      const emailElement = document.getElementById('email');
+      emailElement.textContent = 'muhammed.basith.pk@example.com';
+      emailElement.style.display = 'block';
     }
   </script>
 
