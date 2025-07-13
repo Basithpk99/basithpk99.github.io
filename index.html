@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Muhammed Basith PK | Portfolio</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=El+Messiri&family=Open+Sans&display=swap');
+
+    :root {
+      --main-bg: #f9f9f5;
+      --accent: #005f4b;
+      --text: #1c1c1c;
+      --light-text: #4a4a4a;
+      --card: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: var(--main-bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: url('https://images.unsplash.com/photo-1504274066651-8d31a536b11a') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-color: rgba(0, 0, 0, 0.55);
+      z-index: 1;
+    }
+
+    header .content {
+      position: relative;
+      z-index: 2;
+    }
+
+    header h1 {
+      font-family: 'El Messiri', serif;
+      font-size: 3rem;
+    }
+
+    header h3 {
+      margin-top: 1rem;
+      font-weight: 300;
+      font-size: 1.3rem;
+    }
+
+    header a {
+      margin-top: 2rem;
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background-color: var(--accent);
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+
+    header a:hover {
+      background-color: #004236;
+    }
+
+    section {
+      padding: 4rem 10%;
+    }
+
+    .about, .skills, .contact {
+      background-color: var(--card);
+      margin: 2rem 0;
+      border-left: 5px solid var(--accent);
+      padding: 2rem;
+      border-radius: 10px;
+    }
+
+    h2 {
+      font-family: 'El Messiri', serif;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: var(--accent);
+    }
+
+    .skills ul {
+      list-style: none;
+      padding-left: 0;
+    }
+
+    .skills li {
+      margin-bottom: 0.5rem;
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .contact input,
+    .contact textarea {
+      padding: 0.75rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .contact button {
+      padding: 0.75rem;
+      background-color: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .contact button:hover {
+      background-color: #004236;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1.5rem;
+      font-size: 0.9rem;
+      background-color: #eee;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      section {
+        padding: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="content">
+      <h1>MUHAMMED BASITH PK</h1>
+      <h3>Assistant Professor | Flutter Developer | Islamic Scholar</h3>
+      <a href="#about">Explore My Work</a>
+    </div>
+  </header>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      I'm <strong>Muhammed Basith PK</strong>, an Assistant Professor dedicated to education and innovation. With deep expertise in <strong>Flutter development</strong>, I create elegant cross-platform mobile applications. 
+    </p>
+    <p>
+      Beyond tech, I am also a student and teacher of classical Islamic sciences, striving to balance tradition and technology in today’s world.
+    </p>
+  </section>
+
+  <section class="skills">
+    <h2>Skills & Interests</h2>
+    <ul>
+      <li>📘 Academic Research & Lecturing</li>
+      <li>📱 Flutter & Dart Development</li>
+      <li>🕌 Qur'an & Hadith Studies</li>
+      <li>🧠 UI/UX for Islamic EdTech</li>
+      <li>🌐 Web + Mobile Integration</li>
+    </ul>
+  </section>
+
+  <section class="contact">
+    <h2>Contact Me</h2>
+    <form onsubmit="submitForm(event)">
+      <input type="text" placeholder="Your Name" required/>
+      <input type="email" placeholder="Your Email" required/>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <p id="thanks" style="display:none; margin-top:1rem; color:green;">Thanks for your message!</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Muhammed Basith PK | Built with ❤️ & dua
+  </footer>
+
+  <script>
+    function submitForm(e) {
+      e.preventDefault();
+      document.querySelector("form").reset();
+      document.getElementById("thanks").style.display = "block";
+      setTimeout(() => {
+        document.getElementById("thanks").style.display = "none";
+      }, 3000);
+    }
+  </script>
+
+</body>
+</html>
